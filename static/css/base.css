@@ -1,0 +1,24 @@
+.navbar {
+  margin-bottom: 30px;
+}
+
+.navbar {
+  background-color: black !important;
+  color: white !important;
+}
+
+.nav-item {
+  color: white !important;
+}
+.nav-link {
+  color: white !important;
+}
+.navbar-brand {
+  color: white !important;
+}
+.navbar-toggler {
+  background-color: white !important;
+}
+a {
+  color: white !important;
+}

@@ -1,0 +1,23 @@
+{% extends 'base.html' %} {% load static %} {% block head %}
+<link rel="stylesheet" href="{% static '/css/detail.css' %}" />
+{% endblock head %} {% block extrahead %}
+
+<title>Producto</title>
+
+{% endblock extrahead%} {% block content %}
+<h1>{{player.name}}</h1>
+<div class="player_wrapper">
+  <div>
+    <img src="{{player.image.url}}" alt="{{player.name}}" />
+  </div>
+  <div class="info_wrapper">
+    <p><b>Player: </b>{{player.name}}</p>
+    <p><b>Age: </b>{{player.age}}</p>
+    <p><b>Team: </b>{{player.team}}</p>
+    <p><b>Position: </b>{{player.position}}</p>
+    <div>
+      <a href="{% url 'index' %}" class="btn"> <div>Regresar</div> </a>
+    </div>
+  </div>
+</div>
+{% endblock content%}
